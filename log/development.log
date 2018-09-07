@@ -1,0 +1,37 @@
+  [1m[35m (244.4ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  ↳ /home/tcoff/.rbenv/versions/2.5.1/bin/rake:23
+  [1m[35m (247.6ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  ↳ /home/tcoff/.rbenv/versions/2.5.1/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-09-05 17:21:26 -0700
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/tcoff/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/tcoff/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/railties-5.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.7ms)
+Completed 200 OK in 16ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-07 15:42:50 -0700
+  
+ActionController::RoutingError (undefined method `with' for ApplicationController:Class):
+  
+app/controllers/application_controller.rb:2:in `<class:ApplicationController>'
+app/controllers/application_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2018-09-07 15:43:30 -0700
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (0.1ms)
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-09-07 15:45:00 -0700
+  
+SyntaxError (/home/tcoff/myapp/config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  root/goodbye "application#goodbye"
+               ^):
+  
+config/routes.rb:4: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+Started GET "/" for 127.0.0.1 at 2018-09-07 15:45:18 -0700
+  
+NoMethodError (undefined method `goodbye' for #<ActionDispatch::Routing::Mapper:0x0000561ef19808a8>):
+  
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
